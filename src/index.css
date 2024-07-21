@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("./bg4.png");
+  backdrop-filter: blur(2.5px); 
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.250);
+ 
+min-height: 100vh;
+height: max-content;
+color: white;
+}
+
+#navLinkcontainer{
+  color: white;
+  text-decoration: none;
+  a{
+    color: white;
+  text-decoration: none;
+  }
+}
+
+.WhiteNoUnderLink{
+  color: white;
+  text-decoration: none;
+}
+code {
+  font-family:  "Poppins", sans-serif;
+  color-scheme: dark;
+}
+*{
+  font-family:  "Poppins", sans-serif;
+}
+.navback{
+  background: #0c0500a5;
+  backdrop-filter: blur(50px);
+  }
+.bg-glow-custom-2:hover{
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 4.5px 4.5px rgba(248, 199, 36, 0.679);
+
+}
+.container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container h1{
+  font-size: 2.5rem;
+  color: rgba(239, 149, 40, 0.85);
+  font-family: Poppins;
+}
+.container p{
+  font-size: 1.5rem;
+  color: rgba(239, 149, 40, 0.6);
+  font-family: Poppins;
+}
+
+.explore {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3rem;
+  position: relative;
+  top: 10px;
+  left: -335px;
+  text-align: left;
+  padding: 10px 10px;
+
+  
+}
+
+.wallet{
+  width: 50px;
+
+}
+
+.underline-effect {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  }
+  
+  .underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: orange; /* Customize the color as needed */
+  transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .underline-effect:hover::after {
+  width: 100%;
+  left: 0;
+  }
+  
+  .family {
+    font-family: "Poppins", sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    color: rgba(239, 149, 40, 1);
+    transition: all .4s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(239, 149, 40, 1);
+    border-radius: 4px;
+    width: 6px;
+    transition: all .4s ease;
+}
+
+::-webkit-scrollbar-track {
+    background: #101010;
+    border-radius: 4px;
+    width: 6px;
+}
+
+li {
+  display: flex;
+  /* /justify-content: center; */
+}
