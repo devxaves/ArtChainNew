@@ -124,7 +124,7 @@ if (!dataFetched)
           <div>
             <img src={Loyalty1} className='w-40 h-auto rounded-lg' alt="Diamond Loyalty Card" />
           </div>
-          <div className='ml-16'>
+          <div className='ml-16' data-aos="Fade-up">
             <h1 className='text-2xl text-center font-bold family text-orange-500'>Diamond Loyalty Card</h1>
             <h2 className='text-2xl text-white mt-2 family'>Benefits:</h2>
             <p className='text-xl text-white family'> Unlocks at 1000 Points</p>
