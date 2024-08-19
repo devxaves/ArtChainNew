@@ -13,7 +13,6 @@ import Profile from './components/Profile';
 import NFTPage from './components/NFTpage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Loyalty from './components/Loyalty';
 import LoyaltyProgram from './components/LoyaltyProgram';
 
 // Main application component rendering the routes
@@ -26,7 +25,6 @@ root.render(
         <div className="max-w-7xl mx-auto pt-5 px-6">
           <Routes>
             <Route path="/" element={<Marketplace />} />
-            <Route path="/loyaltyProgram" element={<Loyalty />} />
             <Route path="/loyaltypoints" element={<LoyaltyProgram />} />
             <Route path="/sellNFT" element={<SellNFT />} />
             <Route path="/nftPage/:tokenId" element={<NFTPage />} />

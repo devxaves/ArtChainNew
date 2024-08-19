@@ -120,11 +120,6 @@ export const checklistItems1 = [
     description:
       "Eligible for Monthly Airdrops and All Benefits",
   },
-  // {
-  //   title: "Share work in minutes",
-  //   description:
-  //     "Track the performance of your VR apps and gain insights into user behavior.",
-  // },
 ];
 
 

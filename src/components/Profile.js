@@ -104,16 +104,6 @@ export default function Profile() {
                         </div>
                     </div>
 
-                    {/* <div className=" flex  justify-center text-center flex-col mt-11  mb-5  w-60 h-40 bg-black px-5 py-4 rounded-lg bg-glow-custom-2 " data-aos="fade-up">
-                        <h2 className=" font-bold px-2 py-2 md:text-2xl text-orange-600" data-aos="fade-up">No. of NFTs</h2>
-                        <h2 className=" font-bold px-2 py-2 md:text-2xl text-white" data-aos="zoom-in" >{data.length} </h2>
-                        {data.length}
-                    </div> */}
-                    {/* <div className="  flex  justify-center text-center flex-col mt-11  mb-5  w-60 h-40 bg-black px-5 py-4 rounded-lg bg-glow-custom-2" data-aos="fade-right">
-                        <h2 className="font-bold md:text-2xl px-2 py-2 text-orange-600 " data-aos="fade-up">Total Value</h2>
-                        <h2 className="font-bold md:text-2xl px-2 py-2 text-white  " data-aos="zoom-in" >{totalPrice} ETH</h2>
-                        {totalPrice} ETH
-                    </div> */}
                 </div>
                 <div className="profileClass flex justify-evenly" data-aos="fade-up">
                     <div className="flex justify-center flex-col mt-11 mb-5 px-5 py-4 rounded-lg">

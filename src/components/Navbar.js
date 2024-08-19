@@ -91,12 +91,6 @@ async function connectWebsite() {
               </li>
               
 
-
-              
-            <li className='p-3  underline-effect '>
-                <Link to="/loyaltyProgram" className='WhiteNoUnderLink'>Loyalty Program</Link>
-              </li>
-
               <li className='p-3  underline-effect '>
                 <Link to="/" className='WhiteNoUnderLink'>Marketplace</Link>
               </li>

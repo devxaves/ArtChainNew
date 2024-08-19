@@ -87,22 +87,9 @@ function ConnectWallet(props) {
         </p>
 
         <div className="flex justify-center my-10">
-  {/* <a
-    href="#"
-    className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:from-orange-600 hover:to-orange-900 duration-300"
-    data-aos="fade-right"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"
-    onClick={props.connectMetamask}
-  >
-    Donate to the Artist Community
-  </a> */}
   <a
     href="#"
     className="WhiteNoUnderLink py-3 px-4 mx-3 rounded-md border hover:bg-gray-900 hover:border-orange-500 duration-300"
-    // data-aos="fade-left"
-    // data-aos-offset="300"
-    // data-aos-easing="ease-in-sine"
   >
     Get Original & Verified Artworks
   </a>
