@@ -188,20 +188,6 @@ const Dashboard = () => {
         priceInBaseAsst
       );
 
-      // const formattedVal = parseFloat(priceInBaseAsst);
-      // const newToVal = Math.floor(formattedVal);
-      // console.log("Val", newToVal, typeof newToVal);
-
-      // console.log(
-      //   "Selling:",
-      //   asset,
-      //   "buying:",
-      //   Asset.native(),
-      //   "amount:",
-      //   liqudityAmt,
-      //   "price:",
-      //   newToVal
-      // );
 
       const transaction = new TransactionBuilder(account, {
         fee: BASE_FEE,
@@ -355,103 +341,8 @@ const Dashboard = () => {
   console.log("To val", toValue);
 
   const executeTrade = async (asset) => {
-    // try {
-    //   const server = new Horizon.Server("https://diamtestnet.diamcircle.io");
-    //   const account = await server.loadAccount(publicK);
+  
 
-    //   const formattedVal = parseFloat(receivedQuantity);
-    //   const newToVal = formattedVal.toFixed(2);
-    //   console.log("Val New", newToVal, typeof newToVal);
-
-    //   // console.log(
-    //   //   "selling:",
-    //   //   Asset.native(),
-    //   //   "buying:",
-    //   //   asset,
-    //   //   "buyamount:",
-    //   //   receivedQuantity,
-    //   //   "price:",
-    //   //   toValue
-    //   // );
-
-    //   const transaction = new TransactionBuilder(account, {
-    //     fee: BASE_FEE,
-    //     networkPassphrase: "Diamante Testnet",
-    //   })
-    //     .addOperation(
-    //       Operation.manageBuyOffer({
-    //         selling: Asset.native(),
-    //         buying: asset,
-    //         buyAmount: newToVal,
-    //         price: toValue,
-    //       })
-    //     )
-    //     .setTimeout(100)
-    //     .build();
-
-    //   const xdr = transaction.toXDR("base64");
-
-    //   const resp = await window.diam.sign(xdr, true, "Diamante Testnet");
-    //   console.log("Done>>>", resp);
-    //   if (resp.response.status === 200) {
-    //     setToValue("");
-    //     notify("Successfully Swap");
-    //     setFromValue("");
-    //     setSelectedAssetPrice("");
-    //     setReceivedQuantity("");
-    //     setLiqudityAmt("");
-    //   } else {
-    //     notifyError("Something went wrong");
-    //     setTimeout(() => {
-    //       setError("");
-    //     }, 3000);
-    //   }
-    //   setLoader(false);
-    // } catch (error) {
-    //   console.error(
-    //     "Error during trade execution:",
-    //     error.response ? error.response.data : error.message
-    //   );
-    //   setLoader(false);
-    // }
-
-    // try {
-    //   const server = new Horizon.Server("https://diamtestnet.diamcircle.io");
-    //   const asset1 = new Asset(fromCurrency, swapIssuer);
-    //   const asset2 = new Asset(toCurrency, swapIssuerTwo);
-    //   // const asset3 = new Asset("BOOMC", issuerKeypair.publicKey());
-
-    //   // Check order book for BOOMA/BOOMB
-    //   const orderbook1 = await server.orderbook(asset1, asset2).call();
-    //   console.log(orderbook1, "Order Book BOOMA -> BOOMB");
-
-    //   // Check order book for BOOMB/BOOMC
-    //   // const orderbook2 = await server.orderbook(asset2, asset3).call();
-    //   // console.log(orderbook2, "Order Book BOOMB -> BOOMC");
-
-    //   // Find the path from BOOMA to BOOMC via BOOMB
-    //   const pathCallBuilder = server.strictSendPaths(asset2, "1", [asset1]);
-
-    //   const paths = await pathCallBuilder.call();
-    //   console.log(paths.records, "Found Paths");
-
-    //   // Debugging paths if no paths found
-    //   if (paths.records.length === 0) {
-    //     console.log("No paths found. Trying smaller amount.");
-    //     const pathCallBuilderSmallAmount = server.strictSendPaths(
-    //       asset1,
-    //       "0.1",
-    //       [asset2]
-    //     );
-    //     const pathsSmallAmount = await pathCallBuilderSmallAmount.call();
-    //     console.log(
-    //       pathsSmallAmount.records,
-    //       "Found Paths with smaller amount"
-    //     );
-    //   }
-    // } catch (error) {
-    //   console.error("Error finding paths:", error);
-    // }
     const server = new Horizon.Server("https://diamtestnet.diamcircle.io");
     try {
       const asset1 = new Asset(fromCurrency, swapIssuer);
